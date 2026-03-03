@@ -4,7 +4,7 @@ public class DriverCollege {
     public static void main(String[] args) {
 
 
-        // Module Register Student in College
+        // Module Register Student in College [Use spring container concept]
         // Use do-while
         // students to register in College
         // Develop Student class
