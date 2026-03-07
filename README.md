@@ -8,3 +8,4 @@ Project Development
 // Develop College class
 // Inputs from console for the student to register in college.
 // Register Student in BTech for every branch [CSE,IT,EEE,ECE]
+// Store the student objects into List<Student> list Objects.
