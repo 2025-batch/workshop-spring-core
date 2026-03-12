@@ -1,4 +1,4 @@
-package org.khadri.spring.core.driver;
+package org.khadri.spring.core.beans;
 
 public class Student {
 

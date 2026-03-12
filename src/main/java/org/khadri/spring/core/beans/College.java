@@ -1,4 +1,4 @@
-package org.khadri.spring.core.driver;
+package org.khadri.spring.core.beans;
 import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;

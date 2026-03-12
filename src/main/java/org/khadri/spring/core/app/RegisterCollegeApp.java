@@ -1,14 +1,19 @@
 package org.khadri.spring.core.app;
-
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-import org.khadri.spring.core.driver.College;
-import org.khadri.spring.core.driver.Student;
+import org.khadri.spring.core.beans.College;
+import org.khadri.spring.core.beans.Student;
+import org.khadri.spring.core.util.SpringContextUtil;
 import org.springframework.context.ApplicationContext;
 
 public class RegisterCollegeApp {
+    private static List<String> listOfOperations = Arrays.asList("REGISTER", "EXIT");
+    public void registerStudent() {
+        Scanner sc = new Scanner(System.in);
+        ApplicationContext context = SpringContextUtil.getContext();
 
-    public void registerStudent(Scanner sc, College college, List<String> listOfOperations, ApplicationContext context) {
+        College college = context.getBean(College.class);
 
         boolean decision = true;
 
@@ -58,5 +63,7 @@ public class RegisterCollegeApp {
             }
 
         } while (decision);
+
+        sc.close();
     }
 }
