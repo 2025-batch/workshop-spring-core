@@ -1,17 +1,19 @@
 package org.khadri.spring.core.driver;
 
+import java.util.Scanner;
+import java.util.Arrays;
+import java.util.List;
+
+import org.khadri.spring.core.app.RegisterCollegeApp;
+import org.khadri.spring.core.beans.College;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class DriverCollege {
+        private static List<String> listOfOperations = Arrays.asList("REGISTER", "EXIT");
     public static void main(String[] args) {
 
-
-        // Module Register Student in College [Use spring container concept]
-        // Use do-while
-        // students to register in College
-        // Develop Student class
-        // Develop College class
-        // Inputs from console for the student to register in college.
-        // Register Student in BTech for every branch [CSE,IT,EEE,ECE]
-
-
+        RegisterCollegeApp app= new RegisterCollegeApp();
+        app.registerStudent();
     }
 }
